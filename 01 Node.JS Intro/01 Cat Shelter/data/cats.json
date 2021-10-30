@@ -1,0 +1,44 @@
+[
+	{
+		"id": "c09d4f7e-71fa-4ebe-be28-d2b2ed77a710",
+		"name": "Tom",
+		"description": "Dominant and aggressive to other cats. Will probably eat you in your sleep. Very cute though.",
+		"breed": "Aegean",
+		"image": "cat1.jpg"
+	},
+	{
+		"id": "c9e93070-ecb7-409f-9bd0-8ecafe1992c6",
+		"name": "Jerry",
+		"description": "Dominant and aggressive to other cats. Will probably eat you in your sleep. Very cute though.",
+		"breed": "Australian Mist",
+		"image": "cat2.jpg"
+	},
+	{
+		"id": "c09d4f7e-71fa-4ebe-be28-cfb2ed77a710",
+		"name": "Lily",
+		"description": "Dominant and aggressive to other cats. Will probably eat you in your sleep. Very cute though.",
+		"breed": "Balinese",
+		"image": "cat3.jpg"
+	},
+	{
+		"id": "c9e83030-ecb7-409f-9bd0-8ecafe1482c6",
+		"name": "Lucy",
+		"description": "Dominant and aggressive to other cats. Will probably eat you in your sleep. Very cute though.",
+		"breed": "Persian",
+		"image": "cat4.jpg"
+	},
+	{
+		"id": "c09d6f7e-71fv-4ebe-be28-d2b2ed77a710",
+		"name": "Leo",
+		"description": "Dominant and aggressive to other cats. Will probably eat you in your sleep. Very cute though.",
+		"breed": "Ragdoll",
+		"image": "cat5.jpg"
+	},
+	{
+		"id": "c9e93070-ecb7-409f-9bd0-8ecafe2582c6",
+		"name": "Garfield",
+		"description": "Dominant and aggressive to other cats. Will probably eat you in your sleep. Very cute though.",
+		"breed": "Bambino",
+		"image": "cat6.jpg"
+	}
+]
