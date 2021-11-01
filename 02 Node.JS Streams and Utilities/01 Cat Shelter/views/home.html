@@ -1,0 +1,14 @@
+<h1>Cat Shelter</h1>
+
+<form action="/search" method="POST">
+	<input name="breed" type="text" />
+	<button type="submit">Search</button>
+</form>
+
+<main>
+	<section class="cats">
+		<ul>
+			{{data}}
+		</ul>
+	</section>
+</main>
