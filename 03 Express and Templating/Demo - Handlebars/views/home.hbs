@@ -1,0 +1,39 @@
+<h1>Welcome to home page!</h1>
+<br />
+{{! The engine search for the value we've used inside the passed object }}
+<span>Name: {{name}}</span>
+<br />
+<span>Name: {{age}}</span>
+<br />
+<span>Items in pocket: {{itemsObject.pocket}}</span>
+
+{{! The 'if' helper }}
+{{#if user}}
+	<span>Welcome, {{user.username}} </span>
+{{else}}
+	<span>Welcome</span>
+{{/if}}
+
+{{! Going trough an array with one of the so called helpers }}
+<ul>
+	{{#each itemsArray}}
+		<li> {{@index}}: {{this}} </li>
+	{{/each}}
+</ul>
+
+{{!-- Partial template used --}}
+<ul>
+	{{#each itemsArray}}
+		{{> item}}
+	{{/each}}
+</ul>
+
+
+{{!-- 
+With the following syntax, the message will be interpreted as html.
+This method is vulnerable to XSS so it should never be used on data that comes from the client!
+--}}
+{{{<h1>Some Message</h1>}}}
+
+{{!-- For escaping controlled symbols it's used the following syntax --}}
+{{<h1>Some Message</h1>}}
