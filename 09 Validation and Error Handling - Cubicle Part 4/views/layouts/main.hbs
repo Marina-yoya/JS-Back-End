@@ -1,0 +1,58 @@
+<html lang='en'>
+
+  <head>
+    <meta charset='UTF-8' />
+    <title>{{title}}</title>
+    <link href='/static/css/site.css' type='text/css' rel='stylesheet' />
+    <link rel='shortcut icon' type='image/x-icon' href='static/images/favicon.png' />
+
+  </head>
+
+  <body>
+    <div class='container'>
+      <header>
+        <ul>
+          <li><img class='logo' src='/static/images/logo.png' /></li>
+          <li><a href='/'>Home</a></li>
+          {{#if user}}
+            <li><a href='/products/create'>Add a Cube</a></li>
+            <li><a href='/accessories/create'>Add an Accessory</a></li>
+            <li><a href='/auth/logout'>Logout</a></li>
+          {{else}}
+            <li><a href='/auth/login'>Login</a></li>
+            <li><a href='/auth/register'>Register</a></li>
+          {{/if}}
+          <li><a href='/about'>About</a></li>
+        </ul>
+      </header>
+
+      {{#if errors}}
+        <div id='notifications'>
+
+          {{#each errors}}
+            <p>{{this}}</p>
+          {{/each}}
+
+        </div>
+      {{/if}}
+
+      <main>
+
+        {{!-- {{#if errors}}
+          <span class='error'>
+
+            {{#each err}}
+              <p>{{this}}</p>
+            {{/each}}
+
+          </span>
+        {{/if}} --}}
+
+        {{{body}}}
+
+      </main>
+    </div>
+    <footer>&copy; Cubicle: Exercise</footer>
+  </body>
+
+</html>

@@ -1,0 +1,14 @@
+{{#if emptySearchResult}}
+	<spans style="color:blue">No results in database.</span>
+	{{else}}
+		<div class="cube">
+			<img class="cube" src="{{imageUrl}}" />
+			<p class="name">{{name}}</p>
+			<p><span>Difficulty level:</span> {{difficulty}}</p>
+				<div id="buttons">
+					<a class="btn" href="/cube/details/{{_id}}">Details</a>
+					<a class="btn more" class="toggle-see-more" href="javascript:void(0)">See more</a>
+				</div>
+				<span class="see-more" >{{description}}</span>
+		</div>
+{{/if}}

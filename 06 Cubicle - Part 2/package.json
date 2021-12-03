@@ -1,0 +1,22 @@
+{
+  "name": "name",
+  "description": "description",
+  "authors": "author",
+  "version": "1.0.0",
+  "main": "pathToMain",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "mongoose": "^5.12.12"
+  },
+  "scripts": {
+    "server": "nodemon server.js"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  },
+  "prettier": {
+    "printWidth": 130,
+    "singleQuote": true
+  }
+}

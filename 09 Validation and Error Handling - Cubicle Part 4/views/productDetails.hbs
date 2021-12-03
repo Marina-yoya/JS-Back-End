@@ -1,0 +1,54 @@
+{{#with cube}}
+  <h1>{{name}}</h1>
+  <img class='cube' src='{{imageUrl}}' />
+  <div class='details'>
+
+    <p><span>Author:</span>
+      {{owner}}
+    </p>
+
+    <p><span>Description:</span>
+      {{description}}
+    </p>
+
+    <p><span>Difficulty level:</span> {{difficulty}} </p>
+    <div class="btns-container">
+
+      {{#if isOwner}}
+    <a class='btn' href='/products/edit/{{_id}}'>Edit</a>
+    <a class='btn' href='/products/delete/{{_id}}'>Delete</a>
+    <a class='btn' href='/products/attach/{{_id}}'>Attach accessories</a>
+      {{/if}}
+      
+    <a class='btn' href='/products'>Back</a>
+    </div>
+  </div>
+
+  <h2>Accessories</h2>
+  <div class='accessories details'>
+	  {{#each accessories}}
+			{{> accessory}}
+      {{else}}
+      <h3 class='italic'>This cube has no accessories yet...</h3>
+	  {{/each}}
+  </div>
+
+  <h2>Comments:</h2>
+  <div class='details'>
+
+    {{#if isUser}}
+    <form action='/comments/create/{{_id}}' method='POST'>
+      <label for='content'>Your comment:</label>
+      <textarea name='content' required=''></textarea>
+      <input style='margin: 5px;' type='submit' value='Post comment' />
+    </form>
+    {{/if}}
+
+	 	{{#each comments}}
+			{{> comment}}
+		{{else}}
+			<h3 class='italic'>No comments yet. Be the first to leave a comment!</h3>
+		{{/each}}
+
+  </div>
+{{/with}}

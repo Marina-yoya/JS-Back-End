@@ -1,0 +1,19 @@
+<form action='/auth/register' method='POST'>
+	<h2>Register</h2>
+	<div class='on-dark'>
+		<label for='username'>Username:</label>
+		<input type='text' name='username' placeholder='Username' value='{{userData.username}}' />
+	</div>
+
+	<div class='on-dark'>
+		<label for='password'>Password:</label>
+		<input type='password' name='password' placeholder='********' />
+	</div>
+
+	<div class='on-dark'>
+		<label for='rePassword'>Repeat Password:</label>
+		<input type='password' name='rePassword' placeholder='********' />
+	</div>
+
+	<button class='btn' type='submit'>Register</button>
+</form>
